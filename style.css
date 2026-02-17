@@ -1,0 +1,320 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+.hero{
+    background-image: url(./images/image2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+}
+.hero h1{
+
+    
+    color: black;
+    font-size: 80px;
+    padding-left: 70px;
+    padding-right: 30px;
+    padding-bottom: 70px;
+    
+}
+.container0{
+    width: 90%;
+    max-width: 1100px;
+    margin: 80px auto;
+}
+.About-section{
+    display: flex;
+    gap: 40px;
+    font-size: 20px;
+    align-items: center;
+    font-weight: 200px;
+    padding-bottom: 200px;
+    padding-top: 100px;
+    
+}
+.About-section2{
+
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 200px;
+    padding-bottom: 220px;
+}
+
+.image{
+    flex: 1;  
+}
+.image img{
+ 
+ object-fit: cover;
+ border-radius: 15px;
+ max-width: 450px;
+ 
+}
+img:hover {
+    transform: scale(1.1);
+}
+.navbar{
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.navbar-brand{
+    padding-left: 10px;
+}
+    
+.navbar .navbar-nav .nav-item a{
+    padding: 15px;
+    padding-left: 40px;
+}
+.navbar-nav .nav-item a:hover{
+    color: gray;
+}
+.navbar-nav .nav-but:hover{
+    color: gray;
+}
+.navbar .navbar-nav .nav-but {
+    padding: 15px;
+    
+}
+   
+.nav-but svg{
+    font-size: 200px;
+    
+    
+    
+}
+
+.container1{
+    display: flex;
+    gap: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 1200px;
+    margin: auto;
+    
+       
+}
+
+
+.c-card {
+    background-color: rgb(233, 231, 231);
+    padding: 30px;
+    flex: 1; 
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(167, 43, 43, 0.1);
+    justify-content: space-between;
+    
+}
+
+
+.c-card h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+
+.c-card p {
+    color: gray;
+    margin-bottom: 15px;
+}
+
+
+.c-card img { width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+
+@media (max-width: 768px) {
+    .container1 {
+        flex-direction: column; 
+    }
+}
+.container1 .c-card:hover{
+    color: rgb(3, 0, 5);
+    opacity: 0.7;
+    
+
+}
+.c-card :hover{
+    transform: scale(1.08);
+   
+}
+h1{
+    padding-left: 20PX;
+    padding-top: 150px;
+    font-weight: 10px;
+}
+
+.nav-bar3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     border-bottom: 1px solid #ddd;
+    padding-left: 23px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+
+.menu a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: rgb(22, 21, 21);
+    font-size: large;
+}
+
+.menu a:hover {
+    color: gray;
+}
+
+.actions button{
+    padding: 6px 12px;
+    margin-left: 8px;
+    border: 1px solid #ccc;
+    background: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+ .actions button:hover {
+    background: #b3aeae;
+
+}
+
+@media (min-width: 576px) {   
+     .container2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 768px) {
+    .container2{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .container2{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 575px) {
+    .container2 {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}
+
+.footer {
+    background-color: #222;
+    color: #bbb;
+    padding: 50px 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+.footer-box {
+    flex: 1 1 200px;
+}
+
+
+.footer-box h3 {
+    color: white;
+    margin-bottom: 15px;
+    font-size: 16px;
+    
+}
+
+
+.footer-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-box ul li {
+    margin-bottom: 15px;
+}
+
+.footer-box ul li a {
+    text-decoration: none;
+    color: #bbb;
+    font-size: 16px;
+}
+
+.footer-box ul li a:hover {
+    color: white;
+}
+
+
+.footer-box p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons a i{
+    color: #bbb;
+    margin-right: 15px;
+    font-size: 16px;
+}
+
+.social-icons a:hover {
+    color: white;
+}
+
+
+.footer-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid #555;
+    color: white;
+}
+
+.footer-box button {
+    padding: 10px 20px;
+    border: none;background-color: #6c7cff;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.footer-box button:hover {
+    background-color: #5a68e0;
+}
+
+
+@media (max-width: 575pxpx) {
+
+    .footer-box {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+
+
